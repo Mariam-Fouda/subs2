@@ -1,98 +1,103 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribtion</title>
-    <link rel="stylesheet" href="style.css?v=2">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscription</title>
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
-    <div class="stars"></div>        
-    <div class="container">
-        <header>
-            <h1>Subscribe now</h1>
-            <p>Choose the subscription and enjoy watching the latest movies and series.</p>
-        </header>        
-        <div class="subscription-plans">
-            <div class="plan">
-                <h2>Weekly package</h2>
-                <div class="price">10L.E</div>
-                <div class="duration">One week subscribtion</div>
-                <ul class="features">
-                    <li>Unlimited viewing</li>
-                    <li>High quality HD</li>
-                    <li>Supports mobile devices</li>
-                </ul>
-                <button class="btn subscribe-btn" data-plan="weekly" data-price="10" data-duration="week">Subscribe now</button>
-            </div>            
-            <div class="plan">
-                <h2>Monthly package</h2>
-                <div class="price">20L.E</div>
-                <div class="duration">One month subscribtion</div>
-                <ul class="features">
-                    <li>Unlimited viewing</li>
-                    <li>High quality HD</li>
-                    <li>Supports mobile devices</li>
-                </ul>
-                <button class="btn subscribe-btn" data-plan="monthly" data-price="20" data-duration="month">Subscribe now</button>
-            </div>            
-            <div class="plan">
-                <h2>Yearly packge</h2>
-                <div class="price">100L.E</div>
-                <div class="duration">One year subscribtion</div>
-                <ul class="features">
-                    <li>Unlimited viewing</li>
-                    <li>High quality HD</li>
-                    <li>Supports mobile devices</li>
-                </ul>
-                <button class="btn subscribe-btn" data-plan="yearly" data-price="100" data-duration="year">Subscribe now</button>
-            </div>
-        </div>
-    </div>   
-    <div id="subscriptionModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Subscribe</h2>
-                <button class="close-btn">&times;</button>
-            </div>            
-            <div class="subscription-info">
-                <p>plan: <span id="planName" class="highlight"></span></p>
-                <p>price: <span id="planPrice" class="highlight"></span></p>
-                <p>duration: <span id="planDuration" class="highlight"></span></p>
-            </div>            
-            <div id="step1">
-                <div class="form-group">
-                    <label for="name">Full name</label>
-                    <input type="text" id="name" placeholder="Enter your full name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" placeholder=" Enter your email address ">
-                </div>
-                <button id="continueBtn" class="btn">Submit</button>
-            </div>
-            <div id="step2" style="display: none;">
-                <div class="form-group">
-                    <label for="code">Subscribtion code</label>
-                    <input type="text" id="code" placeholder="Enter your subscribtion code">
-                </div>
-                <button id="completeBtn" class="btn">Submit</button>
-            </div>            
-            <div id="successMessage" class="success-message"> 
-                Your subscription was successful! Thank you.
-            </div>
-        </div>
-    </div>    
-    <script src="script.js"></script>
-    <script>
-        const starsContainer = document.querySelector('.stars');
-        for (let i = 0; i < 1000; i++) {
-          const star = document.createElement('div');
-          star.classList.add('star');
-          star.style.top = Math.random() * 100 + 'vh';
-          star.style.left = Math.random() * 100 + 'vw';
-          starsContainer.appendChild(star);
-        }
-      </script>
+  <div class="stars"></div>
+  <div class="container">
+    <header>
+      <h1>Subscribe now</h1>
+      <p>Choose the subscription and enjoy watching the latest movies and series.</p>
+    </header>
+    <div class="subscription-plans">
+      <div class="plan">
+        <h2>Weekly package</h2>
+        <div class="price">10L.E</div>
+        <div class="duration">One week subscription</div>
+        <ul class="features">
+          <li>Unlimited viewing</li>
+          <li>High quality HD</li>
+          <li>Supports mobile devices</li>
+        </ul>
+        <button class="btn subscribe-btn" data-plan="Weekly" data-price="10" data-duration="1 week">Subscribe now</button>
+      </div>
+      <div class="plan">
+        <h2>Monthly package</h2>
+        <div class="price">20L.E</div>
+        <div class="duration">One month subscription</div>
+        <ul class="features">
+          <li>Unlimited viewing</li>
+          <li>High quality HD</li>
+          <li>Supports mobile devices</li>
+        </ul>
+        <button class="btn subscribe-btn" data-plan="Monthly" data-price="20" data-duration="1 month">Subscribe now</button>
+      </div>
+      <div class="plan">
+        <h2>Yearly package</h2>
+        <div class="price">100L.E</div>
+        <div class="duration">One year subscription</div>
+        <ul class="features">
+          <li>Unlimited viewing</li>
+          <li>High quality HD</li>
+          <li>Supports mobile devices</li>
+        </ul>
+        <button class="btn subscribe-btn" data-plan="Yearly" data-price="100" data-duration="1 year">Subscribe now</button>
+      </div>
+    </div>
+  </div>
+<div id="subscriptionModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Subscribe</h2>
+      <button class="close-btn">&times;</button>
+    </div>
+    <div class="subscription-info">
+      <p>Plan: <span id="planName" class="highlight"></span></p>
+      <p>Price: <span id="planPrice" class="highlight"></span></p>
+      <p>Duration: <span id="planDuration" class="highlight"></span></p>
+    </div>
+    <div id="step1">
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="Enter your full name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="Enter your email address" />
+      </div>
+      <button id="continueBtn" class="btn">Continue</button>
+    </div>
+    <div id="stepPayment" style="display: none;">
+      <p>Please confirm your payment of <span id="payAmount" class="highlight"></span> to continue.</p>
+      <button id="payBtn" class="btn">Pay Now</button>
+      <div id="codeSection" style="display: none; margin-top: 20px;">
+        <label for="code">Enter your subscription code to confirm</label>
+        <input type="text" id="code" placeholder="Enter your code here" required />
+        <button id="completeBtn" class="btn">Confirm Subscription</button>
+      </div>
+    </div>
+    <div id="successMessage" class="success-message" style="display: none;">
+      <p>Subscription successful!</p>
+      <p>Your subscription code is: <strong></strong></p>
+    </div>
+  </div>
+</div>
+   <script>
+  const starsContainer = document.querySelector('.stars');
+  const numStars = 1000; 
+  for (let i = 0; i < numStars; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.left = `${Math.random() * 100}vw`;
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+    starsContainer.appendChild(star);
+  }
+</script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
