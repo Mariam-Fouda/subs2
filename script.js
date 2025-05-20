@@ -54,6 +54,9 @@ continueBtn.addEventListener("click", () => {
 
 payBtn.addEventListener('click', () => {
   alert("Payment successful!");
+  payBtn.style.display = "none";
+  document.getElementById("paymentText").style.display = "none";
+
   document.getElementById("codeSection").style.display = "block";
   generatedCode = generateSubscriptionCode();
   alert("The code is: " + generatedCode);
